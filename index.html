@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mars App</title>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="welcome">Welcome To</div>
+        <div class="welcome">@Marsapp.id</div>
+        
+        <!-- ----------- NAVBAR ASIQUE ------------- -->
+
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">@Marsapp.id</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+                <li><a href="https://www.instagram.com/marsapp.id/">Instagram</a></li>
+                <li><a href="https://wa.me/6285155094220">WhatsApp</a></li>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        <!-- -------------------- END OF NAVBAR ------------------- -->
+
+        <!-- ------------ LOGO GLTF ------------------ -->
+        <div class="cta">
+            <model-viewer src="assets/parameter/scene.gltf" camera-controls camera-orbit="45deg 50deg" disable-zoom auto-rotate shadow-intensity="2"></model-viewer>
+        </div>
+        <div class="information"> Terkait detail produk, silakan untuk klik gambar tersebut</div>
+        <!-- ---------------- END OF GTLF ------------------- -->
+
+        <div class="newBox" id="newBox">
+            <div class="productBox" id="productBox1">
+                <img src="assets/netflix.png" alt=""/>
+                <div class="titleBox">Netflix Private</div>
+                <div class="descriptionBox"><p>- Bisa digunakan 5 perangkat berbeda</p>
+                <p>- Bisa dilakukan perubahan password</p>
+                <p>- Cocok untuk paket keluarga</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox2">
+                <img src="assets/netflix.png" alt=""/>
+                <div class="titleBox">Netflix Shared</div>
+                <div class="descriptionBox"><p>- Hanya dapat dilakukan log in 1 perangkat</p>
+                <p>- Tidak boleh melakukan perubahan password</p>
+                <p>- Tidak boleh log in dan log out</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox3">
+                <img src="assets/netflix.png" alt=""/>
+                <div class="titleBox"> Netflix Shared 2 P 2 U</div>
+                <div class="descriptionBox"><p>- Hanya dapat dilakukan log in 1 perangkat</p>
+                <p>- Tidak boleh melakukan perubahan password</p>
+                <p>- Tidak boleh log in dan log out</p>
+                <p>- Sering terjadi limit screen karena 1 user 2 perangkat</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox4">
+                <img src="assets/spotifysa.png" alt=""/>
+                <div class="titleBox"> Spotify Premium 3 Bulan</div>
+                <div class="descriptionBox"><p>- Akun wajib dari penjual</p>
+                <p>- Mendengarkan music tanpa iklan selama 3 Bulan</p>
+                <p>- Playlist tidak sharing oleh orang lain</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox5">
+                <img src="assets/spotifysa.png" alt=""/>
+                <div class="titleBox"> Spotify 1 Bulan</div>
+                <div class="descriptionBox"><p>- Akun wajib dari penjual</p>
+                    <p>- Mendengarkan music tanpa iklan selama 1 Bulan</p>
+                    <p>- Playlist tidak sharing oleh orang lain</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox6">
+                <img src="assets/spotifysa.png" alt=""/>
+                <div class="titleBox">Spotify 1 Bulan Admin Family</div>
+                <div class="descriptionBox"><p>- Akun wajib dari penjual</p>
+                    <p>- Mendengarkan music tanpa iklan selama 1 Bulan</p>
+                    <p>- Bisa mengundang 5 teman untuk join premium</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox7">
+                <img src="assets/youtubes.png" alt=""/>
+                <div class="titleBox">Youtube Premium 4 Bulan</div>
+                <div class="descriptionBox"><p>- Akun wajib dari penjual</p>
+                    <p>- Menonton youtube tanpa iklan selama 4 Bulan</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox8">
+                <img src="assets/youtubes.png" alt=""/>
+                <div class="titleBox">Youtube Premium 1 Bulan</div>
+                <div class="descriptionBox"><p>- Akun wajib dari penjual</p>
+                    <p>- Menonton youtube tanpa iklan selama 1 Bulan</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+            <div class="productBox" id="productBox9">
+                <img src="assets/youtubes.png" alt=""/>
+                <div class="titleBox">Youtube Premium 1 Bulan Family</div>
+                <div class="descriptionBox"><p>- Akun dari pembeli</p>
+                    <p>- Menonton youtube tanpa iklan selama 1 Bulan</p>
+                    <p>- Wajib belum pernah premium pada youtube accountnya</p></div>
+                <button class="glow-on-hover" type="button"><a href="/">Back To Menu</a></button>
+            </div>
+        </div>
+
+        <div class="wrapper" id="wrapper">
+            <div class="card">
+                    <div class="product" id="product1" onclick="getDetail(1)">
+                    <img src="assets/netflix.png" alt=""/>
+                    </div>
+                    <div class="detail">
+                    <div class="title">Netflix Private</div>
+                    <h3> Rp115.000,-</h3>
+                    <button class="glow-on-hover" type="button"><a href="https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.">Order Here</a></button>
+                </div>
+            </div>
+            <div class="card">
+                     <div class="product" id="product2" onclick="getDetail(2)">
+                    <img src="assets/netflix.png" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">Netflix 1P 1U</div>
+                    <h3> Rp30.000,-</h3>
+                    <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="product" id="product3" onclick="getDetail(3)">
+                    <img src="assets/netflix.png" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">Netflix 2P 2U</div>
+                    <h3> Rp20.000,-</h3>
+                    <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+                </div>
+            </div>
+            <div class="wrapper" id="wrapper">
+            <div class="card">
+                    <div class="product" id="product4" onclick="getDetail(4)">
+                    <img src="assets/spotifysa.png" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">Spotify 3 Bulan</div>
+                    <h3> Rp25.000,-</h3>
+                    <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="product" id="product5" onclick="getDetail(5)">
+                    <img src="assets/spotifysa.png" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">Spotify 1 Bulan</div>
+                    <h3> Rp10.000,-</h3>
+                    <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="product" id="product6" onclick="getDetail(6)">
+                    <img src="assets/spotifysa.png" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">Spotify Admin</div>
+                    <h3> 25.000,-</h3>
+                    <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+                </div>
+            </div>
+            <div class="wrapper" id="wrapper">
+            <div class="card">
+                <div class="product" id="product7" onclick="getDetail(7)">
+                <img src="assets/youtubes.png" alt=""/>
+            </div>
+            <div class="detail">
+                <div class="title">Youtube 4 Bulan</div>
+                <h3> Rp25.000,-</h3>
+                <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+            </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product8" onclick="getDetail(8)">
+                <img src="assets/youtubes.png" alt=""/>
+            </div>
+            <div class="detail">
+                <div class="title">Youtube 1 Bulan</div>
+                <h3> Rp10.000,-</h3>
+                <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+            </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product9" onclick="getDetail(9)">
+                <img src="assets/youtubes.png" alt=""/>
+            </div>
+            <div class="detail">
+                <div class="title">Youtube Family</div>
+                <h3> Rp8.000,-</h3>
+                <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Order Here</a></button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="top-item">
+        <div class="top-item-wrapper">
+            <div class="top-item-row">
+            <img src="assets/adm.png" alt=""/>
+            <div class="top-item-detail">
+            <h3>@Marsapp.id</h3>
+            <p>Best Application Premium</p>
+            <br>
+            <div class="admin1">
+                <button class="glow-on-hover" type="button"><a href=https://wa.me/6285155094220?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Admin 1</a></button>
+            </div>
+            <div class="admin2">
+                <button class="glow-on-hover" type="button"><a href=https://wa.me/6282288383473?text=Hallo%20Mars%20App%20saya%20ingin%20membeli%20aplikasi%20premium.>Admin 2</a></button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; @Marsapp.id</p>
+    </div>
+    </div>
+
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="tweak.js"></script>
+    
+</body>
+</html>
